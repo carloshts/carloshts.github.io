@@ -1,0 +1,25 @@
+/* Header - Topo do site e menu */
+header {
+    width: 100%;
+    
+}
+.header img{
+    max-width: 160px;
+}
+
+header nav{width:100%;}
+header nav ul li a{color:#fff;letter-spacing:-1px;font-size: 1.7em;font-weight:300;margin:0px}
+.side-nav li a{color: #fff}
+.card-content{text-align: justify}
+.carousel-item h2{
+    text-align: center;
+    
+}
+
+section {
+    padding: 0.5em;
+    width: 100%;
+}
+.preto-fosco{
+    background: #333;
+}

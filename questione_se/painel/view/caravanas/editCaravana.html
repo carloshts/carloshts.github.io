@@ -1,0 +1,25 @@
+<section ng-controller="carCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <form>
+                    <div class="input-field col s12">
+                        <label for="data">Data</label>
+                        <input type="text" id="data" ng-model="caravana.data" class="datepicker">
+                    </div>
+                    <div class="input-field col s12">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" class="materialize-textarea" ng-model="caravana.descricao"></textarea>
+                    </div>
+                    <div class="col s12 center" style="padding-top: 5px">
+                        <button type="button" class="btn waves-effect waves-light black">Salvar</button>
+                        <button type="reset" class="btn waves-effect waves-light black" ng-click="coluna.texto=null">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12 m8 offset-m2">
+                <a href="#/caravanas" style="top:5px" class="right btn waves-effect waves-light indigo">Voltar</a>
+            </div>
+        </div>
+    </div>
+</section>

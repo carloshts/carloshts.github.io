@@ -1,0 +1,88 @@
+<div ng-controller="uCtrl">
+    <section class="indigo">
+        <div class="row">
+            <div class="col s12 m4 offset-m4">
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 center">
+                <input type="checkbox" class="filled-in" id="todos" />
+                <label for="todos">Todos</label>
+                <button type="button" style="margin-left: 0.5em" class="black btn waves-effect waves-light">
+                    <i class="material-icons">delete</i>
+                </button>
+            </div>
+            <div class="col s12 m4 center">
+                <ul class="pagination">
+                    <li class="disabled">
+                        <a href="#!">
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    </li>
+                    <li class="active indigo darken-2">
+                        <a href="#!">1</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">2</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">3</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">4</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">5</a>
+                    </li>
+                    <li class="waves-effect">
+                        <a href="#!">
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m4 center">
+                <a href="#/novo-usuario" type="button" class="white indigo-text btn waves-effect waves-light">Novo usuário</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col s12">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img class="responsive-img" src="imgs/col1.jpg" />
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p>
+                                        <input type="checkbox" class="filled-in" id="p" />
+                                        <label for="p"></label>
+                                        <span class="flow-text">Bill Gates</span>
+                                        <button type="button" style="margin-left: 0.5em" class="right black btn btn-floating waves-effect waves-light">
+                                            <i class="material-icons">delete</i>
+                                        </button>
+                                        <button type="button" class="right btn btn-floating waves-effect waves-light indigo">
+                                            <i class="material-icons">create</i>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

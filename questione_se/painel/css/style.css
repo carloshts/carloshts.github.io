@@ -1,0 +1,85 @@
+/* Header - Topo do site e menu */
+header {
+    width: 100%;
+    text-align: center;
+    
+}
+.header img{
+    max-width: 160px;
+}
+.ss100{
+    width: 100%;
+}
+.navb, .content, .footerb {
+    padding-left: 300px;
+  }
+  @media only screen and (min-width : 992px) {
+    .logo{margin-left:33.3%}
+
+  }
+  @media only screen and (max-width : 992px) {
+    .navb, .content, .footerb {
+      padding-left: 0;
+    }
+    .pagination li a{font-size: 0.8em}
+  }
+  @media only screen and (min-width: 601px){
+    #nav {
+        min-height: 56px;
+        position: fixed;
+        width: 100%;
+        line-height: 64px;
+        height: 64px;
+        z-index: 997;
+    }
+    #content{
+        margin-top: 64px;
+    }
+  }
+  @media only screen and(min-width:0px){
+    #nav {
+        min-height: 56px;
+        position: fixed;
+        width: 100%;
+        line-height: 56px;
+        height: 56px;
+        z-index: 997;
+    }
+    .logo{margin-left:0px}
+    #content{
+        margin-top: 56px;
+    }
+  }
+  .ss4{
+      float: left;
+      width: 33.3%;
+  }
+#nav {
+    margin-top: 0;
+    top: 0;
+    min-height: 56px;
+    position: fixed;
+    width: 100%;
+    line-height: 56px;
+    height: 56px;
+    z-index: 997;
+}
+#nav a{color: #fff;font-size: 1.0em;}
+    
+
+#content{min-height:1000px;margin-top: 56px;}
+.side-nav li a{color: #fff;font-size: 1.7em;}
+.card-content{text-align: justify}
+.carousel-item h2{
+    text-align: center;
+    
+}
+.card-image img{
+    max-height: 108px;
+}
+.pagination li a{font-size: 1.0em;color: #fff}
+
+section {
+    padding: 0.5em;
+    width: 100%;
+}

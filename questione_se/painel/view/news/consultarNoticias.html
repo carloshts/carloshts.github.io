@@ -1,0 +1,90 @@
+<section class="light-blue lighten-2" ng-controller="newsCtrl">
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m4 center">
+            <input type="checkbox" class="filled-in" id="todos" />
+            <label for="todos">Todos</label>
+            <button type="button" style="margin-left: 0.5em" class="black btn waves-effect waves-light">
+                <i class="material-icons">delete</i>
+            </button>
+        </div>
+        <div class="col s12 m4 center">
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#!">
+                        <i class="material-icons">chevron_left</i>
+                    </a>
+                </li>
+                <li class="active light-blue">
+                    <a href="#!">1</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">2</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">3</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">4</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">5</a>
+                </li>
+                <li class="waves-effect">
+                    <a href="#!">
+                        <i class="material-icons">chevron_right</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12 m4 center">
+            <a href="#/nova-noticia" type="button" class="white blue-text btn waves-effect waves-light">Nova notícia</a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <div class="col s12">
+            <ul class="collection">
+                <li class="collection-item">
+                    <div class="row" style="margin-top:5px;margin-bottom:5px">
+                        <div class="col s8">
+                            <span>
+                                <input type="checkbox" class="filled-in" id="p" />
+                                <label for="p"></label>
+                                <a href="#">Notícia | dd/mm/yyyy</a>
+                            </span>
+                        </div>
+                        <div class="col s4">
+                            <button type="button" style="margin-left: 0.5em" class="right black btn btn-floating waves-effect waves-light">
+                                <i class="material-icons">delete</i>
+                            </button>
+                            <button type="button" class="right btn btn-floating waves-effect waves-light light-blue lighten-2">
+                                <i class="material-icons">create</i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col s12">
+                            Postado por: <span>Bill Gates</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

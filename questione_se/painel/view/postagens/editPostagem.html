@@ -1,0 +1,25 @@
+<section ng-controller="pCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 ">
+                <form>
+                    <div class="input-field col s12">
+                        <input id="titulo" type="text" ng-model="postagem.titulo" class="validate">
+                        <label for="titulo">Titulo</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <div ckeditor="options" ng-model="postagem.texto" ready="onReady()"></div>
+                    </div>
+                    <div class="col s12 center" style="padding-top: 5px">
+                        <button type="button" class="btn waves-effect waves-light yellow">Salvar</button>
+                        <button type="button" class="btn waves-effect waves-light black">Publicar</button>
+                        <button type="reset" class="btn waves-effect waves-light black" ng-click="postagem.texto=null">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12">
+                <a href="#/colunas" style="top:5px" class="right btn waves-effect waves-light yellow">Voltar</a>
+            </div>
+        </div>
+    </div>
+</section>
