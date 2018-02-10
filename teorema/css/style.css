@@ -1,0 +1,142 @@
+#bg{
+    width: 100%;
+    
+}
+@media only screen and( min-width:992px){
+    
+
+}
+@media only screen and(min-width:601px){
+    #imgredessociais{
+        float:right;
+        max-width:300px;
+        margin-left:1em;
+        margin-top:1em
+    }
+    #blog{
+        float: left;;
+        max-width:350px;
+        margin-right:1em;
+        margin-top:1em;
+    }
+}
+@media only screen and(max-width:601px){
+    #imgredessociais{
+        float:right;
+        max-width:300px;
+        margin-left:1em;
+        margin-top:1em
+    }
+    #blog{
+        float: left;;
+        max-width:350px;
+        margin-right:1em;
+        margin-top:1em;
+    }
+    #pesquisa{
+        opacity: 0;
+        float: right;;
+        max-width:500px;
+        margin-left:1em;
+        margin-top:1em;
+    }
+}
+@media only screen and(min-width:0px){
+    #imgredessociais{
+        float:right;
+        max-width:300px;
+        margin-left:0px;
+        margin-top:1em
+    }
+    #blog{
+        float: left;;
+        max-width:300px;
+        margin-right:0;
+        margin-top:1em;
+    }
+    #pesquisa{
+        opacity: 0;
+        float: right;;
+        max-width:300px;
+        margin-left:0;
+        margin-top:1em;
+    }
+}
+.bg-image{
+    padding-bottom: 10px;
+    color: #fff
+}
+
+.justify{
+    text-align: justify
+}
+#imgredessociais{
+    float:right;
+    max-width:300px;
+    margin-left:1em;
+    margin-top:1em;
+    opacity: 0;
+}
+#blog{
+    opacity: 0;
+    float: left;;
+    max-width:300px;
+    margin-right:1em;
+    margin-top:1em;
+}
+#pesquisa{
+    opacity: 0;
+    float: right;;
+    max-width:500px;
+    margin-left:1em;
+    margin-top:1em;
+}
+#branding{
+    opacity: 0;
+    border-radius: 8px;
+}
+#pesquisalist li{
+    opacity: 0;
+}
+#oqs li{
+    opacity: 0;
+}
+.carousel img{
+    width: 100%
+}
+header{
+    float: none;
+    width: 100%;
+    background: none;
+}
+header nav a{
+    color: #f77b81
+}
+
+header img{
+    max-height: 250px;
+}
+#side li a{
+    color: #f77b81
+}
+#sec1{
+    background: url(../imgs/bgalpes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#sec2{
+    background: url(../imgs/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#sec3{
+    background: url(../imgs/bgmoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.preto-fosco{
+    background: #333
+}

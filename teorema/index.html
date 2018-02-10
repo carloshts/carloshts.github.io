@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="teorema">
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Materialize framework -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/materialize/css/materialize.min.css" />
+    <!-- Css do site -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!-- Materialize framework -->
+    <script src="lib/materialize/js/jquery-3.3.1.min.js"></script>
+    <script src="lib/materialize/js/materialize.min.js"></script>
+    <!-- Angular js -->
+    <script src="lib/angularjs/angular.min.js"></script>
+    <script src="lib/angularjs/angular-route.js"></script>
+
+    <!-- Javascript do site -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/value/config.js"></script>
+</head>
+<body ng-controller="tCtrl">
+    
+    <header class="center">
+        <!--<img src="imgs/Logo.png" class="responsive-img"/>-->
+        
+        <nav>
+            <div class="white nav-wrapper">
+                <a class="button-collapse" data-activates="side" href="#"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#/oquesomos">O que somos?</a></li>
+                    <li><a href="#/pesquisa">Pesquisa mercadologica</a></li>
+                    <li><a href="#/solucoes">Soluções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="side" class="side-nav">
+            <li><a href="#/oquesomos">O que somos?</a></li>
+            <li><a href="#/pesquisa">Pesquisa mercadologica</a></li>
+            <li><a href="#/solucoes">Soluções</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    <img id="bg" src="imgs/background.png" class="red lighten-4 responsive-img z-depth-2"/>
+    <!-- Corpo do site -->
+    <div ng-view></div>
+    
+    <section class="white">
+        <div class="row">
+            
+            <div class="col s12 m4 offset-m4 center">
+                <h4>Assine nossa newsletter</h4>
+                <form>
+                    <div class="input-field col s12">
+                        <input type="email" placeholder="Digite seu E-mail"/>
+                    </div>
+                    <div class="col s12 center">
+                        <button type="button" class="btn waves-effect waves-light red lighten-2">
+                            Assine
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="margin:0 auto; width: 90%">
+            <div class="row">
+                <div class="col s12 m6 l4 offset-l1  red lighten-2 white-text z-depth-2" style="border-radius:8px;padding: 35px">
+                    <a name="contato"></a>
+                    <h5>E-mails:</h5>
+                    <p>
+                        ariana@teoremapropaganda.com.br
+                        <br> contato@teoremapropaganda.com.br
+                        <br> Telefone: 47 3237-2486
+                        <br> Whats: 47 99146800
+            
+                    </p>
+                </div>
+                <div class="col s12 m6 l4 offset-l2  red lighten-2 white-text z-depth-2" style="border-radius:8px;padding: 35px">
+                    <h5>Endereço:</h5>
+                    <p>
+                        <br> Rua Mauá, 233 - Centro - Pomerode e
+                        <br> Rua Paraguai, 289 Ponta Aguda - Blumenau
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="red lighten-2" style="bottom: 0px">
+        <div class="row  white-text">
+            <div class="col s12 ">
+                <p style="text-align: center">Todos os direitos reservados a FORTSWEB Copyright &#169; 2018.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
