@@ -6,7 +6,7 @@ app.config(function ($routeProvider, $locationProvider) {
         
     }).when("/postagens", {
         templateUrl: "view/postagens/consultarPostagens.html",
-        controller: "pCtrl",
+        controller: "pCtrl"
         
     }).when("/nova-postagem", {
         templateUrl: "view/postagens/editPostagem.html",
@@ -65,4 +65,7 @@ app.config(function ($routeProvider, $locationProvider) {
         controller: "carCtrl",
         
     }).otherwise({ redirectTo: '/login'});
+
+    // use the HTML5 History API
+    //$locationProvider.html5Mode(true);
 });

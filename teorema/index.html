@@ -1,172 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head ng-app="teorema">
+<html ng-app="teorema">
+<head >
     <meta charset="utf-8" />
     <title>Teorema</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Materialize framework -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="lib/materialize/css/materialize.min.css" />
-    <!-- Css do site -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link rel="stylesheet" href="css/jk-carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="lib/angularjs/angular.min.js"></script>
+    <script src="lib/angularjs/angular-animate.min.js"></script>
+    <script src="lib/angularjs/angular-aria.min.js"></script>
+    <script src="lib/angularjs/angular-message.min.js"></script>
+    <script src="lib/angularjs/angular-route.js"></script>
+    <!-- Angular Material Library -->
+    <script src="lib/angularjs/angular-material.min.js"></script>
+    <script src="lib/angularjs/jk-carousel.min.js"></script>
+    <!-- Javascript do site -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/value/config.js"></script>
 </head>
-<body ng-controller="tCtrl">
+<body ng-controller="tCtrl" ng-cloak >
     
-    <header class="center">
-        <!--<img src="imgs/Logo.png" class="responsive-img"/>-->
-        
-        <nav>
-            <div class="nav-wrapper white ">
-                <a class="brand-logo" href="#/home" style="color: #f77b81"><i class="material-icons">home</i></a>
-                <a class="button-collapse" data-activates="side" href="#"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#/oquesomos">O que somos?</a></li>
-                    <li><a href="#/pesquisa">Pesquisa mercadologica</a></li>
-                    <li><a href="#/solucoes">Soluções</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul id="side" class="side-nav">
-            <li><a href="#/oquesomos">O que somos?</a></li>
-            <li><a href="#/pesquisa">Pesquisa mercadologica</a></li>
-            <li><a href="#/solucoes">Soluções</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </header>
-    <img id="bg" src="imgs/background.png" class="red lighten-4 responsive-img z-depth-2"/>
-    <!-- Corpo do site -->
-    <section id="sec1" class="bg-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="carousel carousel-slider z-depth-3">
-                            <div class="carousel-item white-text " href="#one!">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img class="responsive-img" src="imgs/slide2.jpg" />
-        
-                                        <div class="card-title">
-                                            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item white-text " href="#two!">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img class="responsive-img" src="imgs/slide3.jpg" />
-        
-                                        <div class="card-title">
-                                            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item white-text " href="#three!">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img class="responsive-img" src="imgs/slide1.jpg" />
-        
-                                        <div class="card-title">
-                                            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item white-text " href="#four!">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img class="responsive-img" src="imgs/slide4.jpg" />
-        
-                                        <div class="card-title">
-                                            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item white-text " href="#five!">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <img class="responsive-img" src="imgs/slide5.jpg" />
-        
-                                        <div class="card-title">
-                                            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sec2" class="bg-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                        <img id="imgredessociais" class="responsive-img z-depth-2" src="imgs/redessociais.jpg"/>
-                        <h4>Gestão de redes sociais</h4>
-                        <p class="flow-text justify" style="float:none;">
-                            Esteja próximo do seu cliente em todas as horas e em qualquer lugar. 
-                            Aproveite o potencial das redes sociais para difundir e desenvolver 
-                            os seus negócios. A Teorema produz conteúdos para engajar o seu público 
-                            com a sua marca, promovendo seus produtos ou serviços.                
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                        <a name="abranding"></a>
-                        <img src="imgs/branding.jpg" id="branding" class="responsive-img z-depth-2" />
-                        <h4>Branding</h4>
-                        <p class="flow-text justify">
-                            O diferencial da sua marca começa no momento da criação. Elaborar uma identidade visual de respeito é trabalho para a Teorema.
-                            Garanta a credibilidade do seu negócio desde os primeiros passos contratando nossos serviços especializados em
-                            design gráfico.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                        <img src="imgs/blog.jpg" id="blog" class="responsive-img z-depth-2">
-                        <h4>Projeto digital e blogs</h4>
-                        <p class="flow-text justify">
-                            Use a internet para demonstrar autoridade na área da sua empresa de forma prática. 
-                            Sites e blogs personalizados são fundamentais para fazer a comunicação com o seu 
-                            cliente. Um projeto com visual e linguagem específicos e um bom sistema de gestão 
-                            de conteúdos é possível com a Teorema.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sec3" class="bg-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                        <img class="responsive-img" id="pesquisa" src="imgs/pesquisa.jpg"/>
-                        <h4>Pesquisa mercadológica</h4>
-                        <p class="flow-text justify">
-                                Entender o mercado no qual sua marca está entrando é o primeiro passo para o sucesso da sua empresa. 
-                                Conte com a experiência da CEO da Teorema, Ariana Kitzberger Lenz. Mestre em Administração pela PUC-PR,
-                                 Ariana acumula as práticas de mercado com a atuação como professora em disciplinas mercadológicas de 
-                                 instituições de ensino superior da região. O trânsito entre academia e mercado enriquece a gama de 
-                                 orientações prestadas pela profissional diante dos mais diversos cenários que a sua empresa pode 
-                                 encontrar.
-                        </p>
-                    </div>
-                </div>
+    <md-toolbar class="fixed-bar">
+        <div class="md-toolbar-tools">
+            <md-button class="hide-gt-md md-icon-button" ng-click="toggleLeft()">
+                <md-icon md-font-set="md">menu</md-icon>
+            </md-button>
+            <span class="hide-gt-md" flex></span>
+            <img src="imgs/LogoHorizontal.png" style="margin:0.1em;max-height:40px;max-width:100%;height:auto"/>
+            
+            
+                <span flex></span>
+            <div class="hide-xs hide-sm hide-md">
                 
+                <md-button ng-click="link('/agencia-de-propaganda')">Agência de Propaganda</md-button>
+                <md-button ng-click="link('/gestao-de-redes-sociais')">Gestão de redes sociais</md-button>
+                <md-button ng-click="link('/desenvolvimento-digital')">DESENVOLVIMENTO DIGITAL</md-button>
+                <md-button ng-click="link('/pesquisa-mercadologica')">Pesquisa mercadológica</md-button>
+                <md-button ng-click="link('/contato')">Contato</md-button>
             </div>
-        </section>
+            
+        </div>
+    </md-toolbar>
+    <md-sidenav md-component-id="left" class="md-sidenav-left">
+        <md-toolbar layout="row" class="md-hue-1">
+            <div class="md-toolbar-tools">
+                <span>Dense</span>
+            </div>
+        </md-toolbar>
+                
+        <md-content layout-margin>
+            <md-list>
+                <md-list-item>
+                    <md-button ng-click="link('/agencia-de-propaganda')">Agência de Propaganda</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-click="link('/gestao-de-redes-sociais')">Gestão de redes sociais</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-click="link('/desenvolvimento-digital')">DESENVOLVIMENTO DIGITAL</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-click="link('/pesquisa-mercadologica')">Pesquisa mercadológica</md-button>
+                </md-list-item>
+                <md-list-item>
+                    <md-button ng-click="link('/contato')">Contato</md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+    
+      
+    
+    <md-content style="min-height:1900px;">
+        <div layout="row">
+                <div md-colors="::{background: 'primary-600'}" flex-offset-gt-sm="10" flex-offset="5" flex-gt-sm="80" flex="90" class="shadow">
+                    <div ng-view  style="margin-top:70px; padding:1em;font-size:16px"></div>
+                </div>
+        </div>
+    </md-content>
+    <!-- Corpo do site 
+    <div ng-view></div>
     <section class="white">
         <div class="row">
             
@@ -215,15 +132,7 @@
             </div>
         </div>
     </section>
-    <!-- Materialize framework -->
-    <script src="lib/materialize/js/jquery-3.3.1.min.js"></script>
-    <script src="lib/materialize/js/materialize.min.js"></script>
-    <!-- Angular js -->
-    <script src="lib/angularjs/angular.min.js"></script>
-    <script src="lib/angularjs/angular-route.js"></script>
-
-    <!-- Javascript do site -->
-    <script src="js/app.js"></script>
-    <script type="text/javascript" src="js/value/config.js"></script>
+    -->
+    
 </body>
 </html>

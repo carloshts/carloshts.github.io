@@ -89,13 +89,15 @@
         </section>
 
         <div ng-if="$root.sidenav" ng-click="abrirmenu()" id="sidenav-overlay" style="opacity: 1;" class=""></div>
-        <!-- Jquery -->
-        <script type="text/javascript" src="lib/materialize/js/jquery-3.3.1.min.js"></script>
         
         <!-- Angular Js -->
+        <!-- Jquery -->
+        <script src="lib/materialize/js/jquery.min.js?v=1"></script>
+        <script src="lib/angularjs/angular.min.js?v=1"></script>
         
-        <script src="lib/angularjs/angular.min.js"></script>
+        <script src="lib/angularjs/angular-animate.js?v=1"></script>
         <script src="lib/angularjs/angular-route.js"></script>
+        <script src="lib/angularjs/angular-base64.min.js"></script>
         <!-- Ckeditor -->
         <script src="ckeditor/ckeditor.js"></script>
         <script src="lib/angular-ckeditor-master/angular-ckeditor.js"></script>
@@ -104,8 +106,15 @@
         <script src="js/app.js"></script>
         
         <script src="js/config/routes.js"></script>
+        <!-- Values -->
+        <script src="js/value/config.js"></script>
         <!-- Services -->
         <script src="js/services/login-service.js"></script>
+        <script src="js/services/postagem-service.js"></script>
+        <!--Directives -->
+        <script src="js/directives/confirm-directive.js"></script>
+        <!--Filters -->
+        <script src="js/filters/datetime-filter.js"></script>
         <!-- Controllers -->
         <script src="js/controllers/main-controller.js"></script>
         <script src="js/controllers/postagem-controller.js"></script>
@@ -114,8 +123,12 @@
         <script src="js/controllers/news-controller.js"></script>
         <script src="js/controllers/usuario-controller.js"></script>
         <script src="js/controllers/login-controller.js"></script>
+
         <!-- Materialize Framework -->
-        <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+        <script src="lib/materialize/js/materialize.min.js?v=1"></script>
+        
+        
+        
 <!---->
     </body>
 

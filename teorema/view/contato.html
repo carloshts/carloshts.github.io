@@ -1,0 +1,25 @@
+<div layout-gt-sm="row" layout="column" layout-padding>
+    <md-whiteframe md-colors="::{background: 'primary-100'}" flex-order-gt-sm="-1" flex-order="1" flex-gt-sm="50" flex="100" class="md-whiteframe-3dp" layout="column">
+        <md-input-container class="md-block">
+            <label>Nome</label>
+            <input required name="nome" ng-model="contato.nome">
+            <div ng-messages="projectForm.nome.$error">
+                <div ng-message="required">Campo obrigatório</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>E-mail</label>
+            <input required name="email" ng-model="contato.email">
+            <div ng-messages="projectForm.email.$error">
+                <div ng-message="required">Campo obrigatório</div>
+            </div>
+        </md-input-container>
+        <md-button class="md-block md-raised md-accent hue-3">Assine nossa newsletter</md-button>
+    </md-whiteframe>
+    <div flex-order-gt-sm="1" flex-order="-1" flex-gt-sm="50" flex="100">
+        <h3>Fale conosco</h3>
+        <p>
+            Informações de contato
+        </p>
+    </div>
+</div>

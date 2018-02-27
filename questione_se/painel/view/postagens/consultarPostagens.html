@@ -1,23 +1,20 @@
 <div ng-controller="pCtrl">
+    <div ng-include="'view/modalPostagem.html'"></div>
     <section class="yellow darken-2">
         <div class="row">
             <div class="col s12 m4 offset-m4">
-                <form>
-                    <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search">
-                            <i class="material-icons">search</i>
-                        </label>
-                        <i class="material-icons">close</i>
+                
+                    <div class="input-field pesquisa">
+                        <input id="search" placeholder="Pesquisar Postagem" type="text" ng-model="buscaP">
+                        
                     </div>
-                </form>
             </div>
         </div>
         <div class="row">
             <div class="col s12 m4 center">
-                <input type="checkbox" class="filled-in" id="todos" />
+                <input type="checkbox" ng-model="selectTodos" ng-change="selecionarTodos(selectTodos)" class="filled-in" id="todos" />
                 <label for="todos">Todos</label>
-                <button type="button" style="margin-left: 0.5em" class="black btn waves-effect waves-light">
+                <button type="button" ng-confirm-click="Deseja excluir as postagens selecionadas?" ng-click="deletarSelecionados()" style="margin-left: 0.5em" class="black btn waves-effect waves-light">
                     <i class="material-icons">delete</i>
                 </button>
             </div>
@@ -59,22 +56,22 @@
         <div class="row">
             <div class="col s12">
                 <ul class="collection">
-                    <li class="collection-item">
+                    <li class="collection-item" ng-repeat="p in postagens| filter:buscaP">
                         <div class="row" style="margin-top:5px;margin-bottom:5px">
                             <div class="col s8">
                                 <span>
-                                    <input type="checkbox" class="filled-in" id="p" />
-                                    <label for="p"></label>
-                                    <a href="#">Postagem | dd/mm/yyyy</a>
+                                    <input type="checkbox" ng-model="p.selecionado" class="filled-in" id="p_{{p.id}}" />
+                                    <label for="p_{{p.id}}"></label>
+                                    <span style="font-size: 1.5em">{{p.titulo}} - {{p.created_at| mydatetime:'dd/MM/yyyy'}}</span>
                                 </span>
                             </div>
                             <div class="col s4">
-                                <button type="button" style="margin-left: 0.5em" class="right black btn btn-floating waves-effect waves-light">
+                                <button type="button" ng-confirm-click="Deseja excluir a postagem?" ng-click="deletar(p.id)" modal style="margin-left: 0.5em" class="right black btn btn-floating waves-effect waves-light">
                                     <i class="material-icons">delete</i>
                                 </button>
-                                <button type="button" class="right btn btn-floating waves-effect waves-light yellow">
+                                <a href="#/edit-postagem/{{p.id}}" class="right btn btn-floating waves-effect waves-light yellow">
                                     <i class="material-icons">create</i>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </li>
