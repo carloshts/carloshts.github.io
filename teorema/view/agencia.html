@@ -1,12 +1,56 @@
-<div layout="row">
+<div layout="column" layout-padding layout-wrap>
     <div flex>
-        <h3>Agência de Propaganda</h3>
+        
+            <h2>O que somos?</h2>
+            <p class="justify">
+                Somos uma agência de marketing e propaganda. Dedicamos nossa experiência e constante atualização para conectar sua empresa ao seu público. Somos especialistas em tornar sua empresa atrativa nos meios online e offline fazendo uso de:
+            </p>
+            
+            <ul>
+                <li>Mídias digitais</li>
+                <li>Mídias off-line</li>
+                <li>Dados de pesquisas mercadológicas</li>
+                <li>Campanhas de publicidade</li>
+            </ul> 
+            <jk-carousel data="slides.slidep1" max-width="1980" 
+            max-height="800" item-template-url="'view/slide2.html'" auto-slide="true" auto-slide-time="2000" class="shadow">
+        </jk-carousel>
+            <h2>O que fazemos?</h2>
+            <p class="justify">Resultados são o nosso combustível.
+            Estudos de mercado fundamentam nossos trabalhos, definindo os caminhos corretos para levar sua marca ao topo.
+            Enquanto você se dedica ao seu negócio, nós cuidamos da sua marca.
+            Temos a solução para o seu e-commerce, criando e gerenciando uma estratégia rentável.
+            Temos a solução também para seu negócio que não usa a internet para vender, mas pode aproveitar para fazer uma bela vitrine.
+            Nossos serviços vão posicionar seus produtos e serviços no mercado</p>
+            
+            
+            
+            
+        <h2>Agência de Propaganda</h2>
         <p class="justify">
 
             Suas ideias mais legais viram resultados para o seu negócio. A Teorema cuida da imagem e comunicação da sua marca. Elaboramos outdoors, folders, cartões, flyers, banners e outros materiais de divulgação a fim de ficar bem perto do seu cliente.
         </p>
+            
+        
+    </div>
+    <div class="texto-img-right" flex>
+        <img src="imgs/branding.jpg" alt="">
+        <h3>Branding</h3>
+        <p class="justify">
+            O diferencial da sua marca começa na criação. Elaborar uma identidade visual de respeito é trabalho 
+            para a Teorema. Garanta a credibilidade do seu negócio desde o início. Contrate nossos serviços de 
+            design gráfico.
+        </p>
+    </div>
+    <div flex>
+        <h4 class="center">Veja nossos cases de sucesso</h4>
     </div>
 </div>
-<div layout-gt-sm="row" layout="collumn">
+<div layout="column" layout-gt-sm="row" layout-padding layout-wrap>
     
+    <div flex-gt-sm="50" flex="100"  ng-repeat="c in cases">
+        <img src="{{c.src}}" class="shadow responsive-img">
+    </div>
+
 </div>

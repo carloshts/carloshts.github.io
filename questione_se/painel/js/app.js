@@ -1,2 +1,1 @@
-var app = angular.module('qpainel',['ngAnimate','ngRoute','ckeditor','base64']);
-
+var app = angular.module('qpainel', ['ngAnimate', 'ngRoute', 'ckeditor', 'naif.base64']);

@@ -34,6 +34,7 @@ Route::group(array('prefix' => 'usuario'), function()
 
 Route::group(array('prefix' => 'postagem'), function()
 {
+    Route::get('/pages','PostagemController@showPage');
     Route::get('','PostagemController@index');
     Route::get('/{id}','PostagemController@show');
     Route::get('usuario/{id}','PostagemController@showByUsuario');

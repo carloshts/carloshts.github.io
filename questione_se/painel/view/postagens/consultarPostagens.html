@@ -3,11 +3,11 @@
     <section class="yellow darken-2">
         <div class="row">
             <div class="col s12 m4 offset-m4">
-                
-                    <div class="input-field pesquisa">
-                        <input id="search" placeholder="Pesquisar Postagem" type="text" ng-model="buscaP">
-                        
-                    </div>
+
+                <div class="input-field pesquisa">
+                    <input id="search" placeholder="Pesquisar Postagem" type="text" ng-model="buscaP">
+
+                </div>
             </div>
         </div>
         <div class="row">
@@ -25,20 +25,8 @@
                             <i class="material-icons">chevron_left</i>
                         </a>
                     </li>
-                    <li class="active yellow darken-4">
-                        <a href="#!">1</a>
-                    </li>
-                    <li class="waves-effect">
-                        <a href="#!">2</a>
-                    </li>
-                    <li class="waves-effect">
-                        <a href="#!">3</a>
-                    </li>
-                    <li class="waves-effect">
-                        <a href="#!">4</a>
-                    </li>
-                    <li class="waves-effect">
-                        <a href="#!">5</a>
+                    <li ng-repeat="pag in paginas.paginas" ng-click="acessarPagina(pag.n)" ng-class="(pag.selecionado)?'active yellow darken-4':'waves-effect'">
+                        <a>{{pag.n}}</a>
                     </li>
                     <li class="waves-effect">
                         <a href="#!">

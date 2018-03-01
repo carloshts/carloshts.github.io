@@ -61,8 +61,11 @@ class PostagemController extends Controller
         return response()->json($postagem);
         
     }
+    public function showPage(){
+        return Postagem::paginate();
+    }
     public function showByUsuario($id){
-        $postagem = Postagem::with(['tipo_postagem'])->find($id);
+        $postagem = Postagem::with(['tipo_postagem'])->find($id)->paginate();
         if(!$postagem){
             return response()->json([
                 'message' => 'Postagem não encontrada',
@@ -72,7 +75,7 @@ class PostagemController extends Controller
         return response()->json($postagem);
     }
     public function showByTipoPostagem($id){
-        $postagem = Postagem::with(['usuario'])->find($id);
+        $postagem = Postagem::with(['usuario'])->find($id)->paginate();
         if(!$postagem){
             return response()->json([
                 'message' => 'Postagem não encontrada',

@@ -42,6 +42,14 @@ app.config(function($mdThemingProvider,$mdIconProvider,$routeProvider, $location
     controller: "tCtrl",
         
   })
+  .when("/gestao-de-redes-sociais",{
+    templateUrl:"view/gestao_rede_sociais.html",
+    controller: "tCtrl"
+  })
+  .when("/desenvolvimento-digital",{
+    templateUrl:"view/desenvolvimento.html",
+    controller: "tCtrl"
+  })
   .when("/pesquisa-mercadologica", {
     templateUrl: "view/pesquisamercadologica.html",
     controller: "tCtrl",
@@ -56,7 +64,19 @@ app.config(function($mdThemingProvider,$mdIconProvider,$routeProvider, $location
 });
 
 app.controller('tCtrl',function ctrl($scope,$mdSidenav,$location) {
-  $scope.slides = {slidep1:[
+  $scope.slides = {
+    slidep1:[
+      {
+        src:"imgs/ag1.jpg"
+      },
+      {
+        src:"imgs/ag3.jpg"
+      },
+      {
+        src:"imgs/ag4.jpg"
+      }
+    ],
+    slidep2:[
     {
       src:"imgs/pesquisa.jpg"
     },
@@ -73,6 +93,26 @@ app.controller('tCtrl',function ctrl($scope,$mdSidenav,$location) {
       src:"imgs/pesquisa5.jpg"
     }
   ]}
+  $scope.cases = [
+    {
+      src: 'teorema_imgs/cases (1).jpeg'
+    },
+    {
+      src: 'teorema_imgs/cases (2).jpeg'
+    },
+    {
+      src: 'teorema_imgs/cases (3).jpeg'
+    },
+    {
+      src: 'teorema_imgs/cases (4).jpeg'
+    },
+    {
+      src: 'teorema_imgs/cases (5).jpeg'
+    },
+    {
+      src: 'teorema_imgs/cases (6).jpeg'
+    },
+  ]
   $scope.link = function(path){
     $location.path(path)
   };

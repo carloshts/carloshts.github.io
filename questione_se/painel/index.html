@@ -1,135 +1,135 @@
 <!DOCTYPE html>
 <html ng-app="qpainel">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Painel Administrativo</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Materialize framework -->
-        <link rel="stylesheet" href="lib/materialize/css/materialize.min.css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+    <title>Painel Administrativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Materialize framework -->
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <!-- Css do painel -->
-        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-        
-        
-    </head>
+    <!-- Css do painel -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
-    <body ng-controller="main">
-        
-        <!-- Topo e menu -->
-        <div id="nav" ng-class="($root.auth)?'black z-depth-1 navb':'black z-depth-1'">
-                <div class="col ss4" ng-if="$root.auth">
-                        <a ng-click="abrirmenu()" data-activates="side"  style="margin-left:1em;cursor:pointer" class="left button-collapse hide-on-large-only">
-                                <i class="material-icons">menu</i>
-                            </a>
-                </div>
-                <div ng-class="($root.auth)?'col ss4 logo':'col ss100';" style="text-align:center">
-                        <a href="#/postagens">Painel administrativo</a>
 
-                </div>
-                <div class="col ss4" ng-if="$root.auth">
-                        <a href="#" style="margin-right:1em" class="right white-text">
-                                <i class="material-icons">exit_to_app</i>
-                            </a>
-                </div>
+</head>
+
+<body ng-controller="main">
+
+    <!-- Topo e menu -->
+    <div id="nav" ng-class="($root.auth)?'black z-depth-1 navb':'black z-depth-1'">
+        <div class="col ss4" ng-if="$root.auth">
+            <a ng-click="abrirmenu()" data-activates="side" style="margin-left:1em;cursor:pointer" class="left button-collapse hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
-        <header class="header" ng-if="$root.auth">
-            <ul class="side-nav fixed yellow hide-on-med-and-down" >
-                <li>
-                    <div class="user-view" style="height:180px">
-                        <div class="background black" >
-                            <img class="responsive-img" src="imgs/Logo.png" />
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="col s12 yellow darken-1">
-                        <img class="circle responsive" style="max-height: 60px" src="imgs/col1.jpg">
-                        <h5 class="center white-text">Bill Gates</h5>
-                    </div>
-                </li>
-                <li><a href="#/postagens">Postagens</a></li>
-                <li><a href="#/colunas">Colunas</a></li>
-                <li><a href="#/caravanas">Caravanas</a></li>
-                <li><a href="#/news">News</a></li>
-                <li><a href="#/usuarios">Usuários</a></li>
-            </ul>
-            <ul class="side-nav yellow" ng-style="($root.sidenav)?{'transform': 'translateX(0px)'}:''" id="side">
-                <li>
-                    <div class="user-view" style="height:180px">
-                        <div class="background black" >
-                            <img class="responsive-img" src="imgs/Logo.png" />
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="col s12 yellow darken-1">
-                        <img class="circle responsive" style="max-height: 60px" src="imgs/col1.jpg">
-                        <h5 class="center white-text">Bill Gates</h5>
-                    </div>
-                </li>
-                <li><a href="#/postagens">Postagens</a></li>
-                <li><a href="#/colunas">Colunas</a></li>
-                <li><a href="#/caravanas">Caravanas</a></li>
-                <li><a href="#/news">News</a></li>
-                <li><a href="#/usuarios">Usuários</a></li>
-            </ul>
-        </header>
-        <!-- Corpo do site -->
-        <div id="content" ng-view ng-class="($root.auth)?'content':''"></div>
+        <div ng-class="($root.auth)?'col ss4 logo':'col ss100';" style="text-align:center">
+            <a href="#/postagens">Painel administrativo</a>
 
-        <!-- Rodapé e redes sociais -->
-        <section id="footer" ng-class="($root.auth)?'footerb black':'black'" style="margin-bottom:0px;bottom:0px">
-            <div class="row white-text">
-                <div class="col s12 ">
-                    <p style="text-align: center">Todos os direitos reservados a FORTSWEB Copyright &#169; 2018.</p>
+        </div>
+        <div class="col ss4" ng-if="$root.auth">
+            <a href="#" style="margin-right:1em" class="right white-text">
+                <i class="material-icons">exit_to_app</i>
+            </a>
+        </div>
+    </div>
+    <header class="header" ng-if="$root.auth">
+        <ul class="side-nav fixed yellow hide-on-med-and-down">
+            <li>
+                <div class="user-view" style="height:180px">
+                    <div class="background black">
+                        <img class="responsive-img" src="imgs/Logo.png" />
+                    </div>
                 </div>
+            </li>
+            <li>
+                <div class="col s12 yellow darken-1">
+                    <img class="circle responsive" style="max-height: 60px" src="imgs/col1.jpg">
+                    <h5 class="center white-text">Bill Gates</h5>
+                </div>
+            </li>
+            <li><a href="#/postagens">Postagens</a></li>
+            <li><a href="#/colunas">Colunas</a></li>
+            <li><a href="#/caravanas">Caravanas</a></li>
+            <li><a href="#/news">News</a></li>
+            <li><a href="#/usuarios">Usuários</a></li>
+        </ul>
+        <ul class="side-nav yellow" ng-style="($root.sidenav)?{'transform': 'translateX(0px)'}:''" id="side">
+            <li>
+                <div class="user-view" style="height:180px">
+                    <div class="background black">
+                        <img class="responsive-img" src="imgs/Logo.png" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col s12 yellow darken-1">
+                    <img class="circle responsive" style="max-height: 60px" src="imgs/col1.jpg">
+                    <h5 class="center white-text">Bill Gates</h5>
+                </div>
+            </li>
+            <li><a href="#/postagens">Postagens</a></li>
+            <li><a href="#/colunas">Colunas</a></li>
+            <li><a href="#/caravanas">Caravanas</a></li>
+            <li><a href="#/news">News</a></li>
+            <li><a href="#/usuarios">Usuários</a></li>
+        </ul>
+    </header>
+    <!-- Corpo do site -->
+    <div id="content" ng-view ng-class="($root.auth)?'content':''"></div>
+
+    <!-- Rodapé e redes sociais -->
+    <section id="footer" ng-class="($root.auth)?'footerb black':'black'" style="margin-bottom:0px;bottom:0px">
+        <div class="row white-text">
+            <div class="col s12 ">
+                <p style="text-align: center">Todos os direitos reservados a FORTSWEB Copyright &#169; 2018.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div ng-if="$root.sidenav" ng-click="abrirmenu()" id="sidenav-overlay" style="opacity: 1;" class=""></div>
-        
-        <!-- Angular Js -->
-        <!-- Jquery -->
-        <script src="lib/materialize/js/jquery.min.js?v=1"></script>
-        <script src="lib/angularjs/angular.min.js?v=1"></script>
-        
-        <script src="lib/angularjs/angular-animate.js?v=1"></script>
-        <script src="lib/angularjs/angular-route.js"></script>
-        <script src="lib/angularjs/angular-base64.min.js"></script>
-        <!-- Ckeditor -->
-        <script src="ckeditor/ckeditor.js"></script>
-        <script src="lib/angular-ckeditor-master/angular-ckeditor.js"></script>
-        
-        <!-- Javascript do painel -->
-        <script src="js/app.js"></script>
-        
-        <script src="js/config/routes.js"></script>
-        <!-- Values -->
-        <script src="js/value/config.js"></script>
-        <!-- Services -->
-        <script src="js/services/login-service.js"></script>
-        <script src="js/services/postagem-service.js"></script>
-        <!--Directives -->
-        <script src="js/directives/confirm-directive.js"></script>
-        <!--Filters -->
-        <script src="js/filters/datetime-filter.js"></script>
-        <!-- Controllers -->
-        <script src="js/controllers/main-controller.js"></script>
-        <script src="js/controllers/postagem-controller.js"></script>
-        <script src="js/controllers/coluna-controller.js"></script>
-        <script src="js/controllers/caravana-controller.js"></script>
-        <script src="js/controllers/news-controller.js"></script>
-        <script src="js/controllers/usuario-controller.js"></script>
-        <script src="js/controllers/login-controller.js"></script>
+    <div ng-if="$root.sidenav" ng-click="abrirmenu()" id="sidenav-overlay" style="opacity: 1;" class=""></div>
 
-        <!-- Materialize Framework -->
-        <script src="lib/materialize/js/materialize.min.js?v=1"></script>
-        
-        
-        
-<!---->
-    </body>
+    <!-- Angular Js -->
+    <!-- Jquery -->
+    <script src="lib/materialize/js/jquery.min.js?v=1"></script>
+    <script src="lib/angularjs/angular.min.js?v=1"></script>
+
+    <script src="lib/angularjs/angular-animate.js?v=1"></script>
+    <script src="lib/angularjs/angular-route.js"></script>
+    <script src="lib/angularjs/angular-base64.min.js?v=0"></script>
+    <!-- Ckeditor -->
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="lib/angular-ckeditor-master/angular-ckeditor.js"></script>
+
+    <!-- Javascript do painel -->
+    <script src="js/app.js"></script>
+
+    <script src="js/config/routes.js"></script>
+    <!-- Values -->
+    <script src="js/value/config.js"></script>
+    <!-- Services -->
+    <script src="js/services/login-service.js"></script>
+    <script src="js/services/postagem-service.js?v=0"></script>
+    <!--Directives -->
+    <script src="js/directives/confirm-directive.js"></script>
+    <!--Filters -->
+    <script src="js/filters/datetime-filter.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/main-controller.js"></script>
+    <script src="js/controllers/postagem-controller.js"></script>
+    <script src="js/controllers/coluna-controller.js"></script>
+    <script src="js/controllers/caravana-controller.js"></script>
+    <script src="js/controllers/news-controller.js"></script>
+    <script src="js/controllers/usuario-controller.js"></script>
+    <script src="js/controllers/login-controller.js"></script>
+
+    <!-- Materialize Framework -->
+    <script src="lib/materialize/js/materialize.min.js?v=1"></script>
+
+
+
+    <!---->
+</body>
 
 </html>

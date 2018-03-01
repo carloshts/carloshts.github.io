@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="lib/angularjs/angular.min.js"></script>
+    
     <script src="lib/angularjs/angular-animate.min.js"></script>
     <script src="lib/angularjs/angular-aria.min.js"></script>
     <script src="lib/angularjs/angular-message.min.js"></script>
@@ -30,7 +31,7 @@
                 <md-icon md-font-set="md">menu</md-icon>
             </md-button>
             <span class="hide-gt-md" flex></span>
-            <img src="imgs/LogoHorizontal.png" style="margin:0.1em;max-height:40px;max-width:100%;height:auto"/>
+            <a href="#/"><img src="imgs/LogoHorizontal.png" style="margin:0.1em;max-height:40px;max-width:100%;height:auto"/></a>
             
             
                 <span flex></span>
@@ -45,14 +46,14 @@
             
         </div>
     </md-toolbar>
-    <md-sidenav md-component-id="left" class="md-sidenav-left">
-        <md-toolbar layout="row" class="md-hue-1">
+    <md-sidenav md-colors="::{background: 'primary-600'}" md-component-id="left" class="md-sidenav-left">
+        <md-toolbar layout="row" md-colors="::{background: 'primary-50'}">
             <div class="md-toolbar-tools">
-                <span>Dense</span>
+                <span>Menu</span>
             </div>
         </md-toolbar>
                 
-        <md-content layout-margin>
+        <md-content layout-margin md-colors="::{background: 'primary-600'}">
             <md-list>
                 <md-list-item>
                     <md-button ng-click="link('/agencia-de-propaganda')">Agência de Propaganda</md-button>
@@ -75,64 +76,35 @@
     
       
     
-    <md-content style="min-height:1900px;">
+    <md-content style="min-height:600px;">
         <div layout="row">
-                <div md-colors="::{background: 'primary-600'}" flex-offset-gt-sm="10" flex-offset="5" flex-gt-sm="80" flex="90" class="shadow">
+                <div style="margin-bottom:1em;" md-colors="::{background: 'primary-700'}" flex-offset-gt-sm="10" flex-offset="5" flex-gt-sm="80" flex="90" class="shadow">
                     <div ng-view  style="margin-top:70px; padding:1em;font-size:16px"></div>
                 </div>
         </div>
     </md-content>
-    <!-- Corpo do site 
-    <div ng-view></div>
-    <section class="white">
-        <div class="row">
-            
-            <div class="col s12 m4 offset-m4 center">
-                <h4>Assine nossa newsletter</h4>
-                <form>
-                    <div class="input-field col s12">
-                        <input type="email" placeholder="Digite seu E-mail"/>
-                    </div>
-                    <div class="col s12 center">
-                        <button type="button" class="btn waves-effect waves-light red lighten-2">
-                            Assine
-                        </button>
-                    </div>
-                </form>
-            </div>
+    <div  style="bottom:0px" md-colors="::{background: 'primary-200'}" layout="column" layout-gt-sm="row" layout-padding>
+        <div flex flex-order-gt-sm="-1" flex-order="-1">
+            <h3 class="center">Fale conosco</h3>
+            <p class="center">
+               <br> Informações de contato
+               <br>
+               <br> ariana@teoremapropaganda.com.br 
+                
+               <br> Telefone: 47 3237-2486
+               <br> WhatsApp: 47 99146800
+    
+            </p>
         </div>
-        <div style="margin:0 auto; width: 90%">
-            <div class="row">
-                <div class="col s12 m6 l4 offset-l1  red lighten-2 white-text z-depth-2" style="border-radius:8px;padding: 35px">
-                    <a name="contato"></a>
-                    <h5>E-mails:</h5>
-                    <p>
-                        ariana@teoremapropaganda.com.br
-                        <br> contato@teoremapropaganda.com.br
-                        <br> Telefone: 47 3237-2486
-                        <br> Whats: 47 99146800
-            
-                    </p>
-                </div>
-                <div class="col s12 m6 l4 offset-l2  red lighten-2 white-text z-depth-2" style="border-radius:8px;padding: 35px">
-                    <h5>Endereço:</h5>
-                    <p>
-                        <br> Rua Mauá, 233 - Centro - Pomerode e
-                        <br> Rua Paraguai, 289 Ponta Aguda - Blumenau
-                    </p>
-                </div>
-            </div>
+        <div flex class="center" flex-order-gt-sm="2" flex-order="1">
+            Desenvolvido por <br>
+            <a href="http://fortesweb.com.br"><img style="max-width: 200px" src="imgs/Logofw.png"></a>
         </div>
-        
-    </section>
-    <section class="red lighten-2" style="bottom: 0px">
-        <div class="row  white-text">
-            <div class="col s12 ">
-                <p style="text-align: center">Todos os direitos reservados a FORTSWEB Copyright &#169; 2018.</p>
-            </div>
+        <div flex class="center" flex-order-gt-sm="1" flex-order="2">
+                <img src="imgs/LogoHorizontal.png" style="max-height:40px;max-width:100%;height:auto"/><br>
+            Copyright &#169; 2018, Todos os direitos reservados a Teorema .
         </div>
-    </section>
-    -->
+    </div>
     
 </body>
 </html>
