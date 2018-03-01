@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="teorema">
-<head >
+
+<head>
     <meta charset="utf-8" />
     <title>Teorema</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="lib/angularjs/angular.min.js"></script>
-    
+
     <script src="lib/angularjs/angular-animate.min.js"></script>
     <script src="lib/angularjs/angular-aria.min.js"></script>
     <script src="lib/angularjs/angular-message.min.js"></script>
@@ -23,27 +24,28 @@
     <script src="js/app.js"></script>
     <script type="text/javascript" src="js/value/config.js"></script>
 </head>
-<body ng-controller="tCtrl" ng-cloak >
-    
+
+<body ng-controller="tCtrl" ng-cloak>
+
     <md-toolbar class="fixed-bar">
         <div class="md-toolbar-tools">
             <md-button class="hide-gt-md md-icon-button" ng-click="toggleLeft()">
                 <md-icon md-font-set="md">menu</md-icon>
             </md-button>
             <span class="hide-gt-md" flex></span>
-            <a href="#/"><img src="imgs/LogoHorizontal.png" style="margin:0.1em;max-height:40px;max-width:100%;height:auto"/></a>
-            
-            
-                <span flex></span>
+            <a href="#/"><img src="imgs/LogoHorizontal.png" style="margin:0.1em;max-height:40px;max-width:100%;height:auto" /></a>
+
+
+            <span flex></span>
             <div class="hide-xs hide-sm hide-md">
-                
+
                 <md-button ng-click="link('/agencia-de-propaganda')">Agência de Propaganda</md-button>
                 <md-button ng-click="link('/gestao-de-redes-sociais')">Gestão de redes sociais</md-button>
                 <md-button ng-click="link('/desenvolvimento-digital')">DESENVOLVIMENTO DIGITAL</md-button>
                 <md-button ng-click="link('/pesquisa-mercadologica')">Pesquisa mercadológica</md-button>
                 <md-button ng-click="link('/contato')">Contato</md-button>
             </div>
-            
+
         </div>
     </md-toolbar>
     <md-sidenav md-colors="::{background: 'primary-600'}" md-component-id="left" class="md-sidenav-left">
@@ -52,7 +54,7 @@
                 <span>Menu</span>
             </div>
         </md-toolbar>
-                
+
         <md-content layout-margin md-colors="::{background: 'primary-600'}">
             <md-list>
                 <md-list-item>
@@ -73,38 +75,38 @@
             </md-list>
         </md-content>
     </md-sidenav>
-    
-      
-    
+
+
+
     <md-content style="min-height:600px;">
         <div layout="row">
-                <div style="margin-bottom:1em;" md-colors="::{background: 'primary-700'}" flex-offset-gt-sm="10" flex-offset="5" flex-gt-sm="80" flex="90" class="shadow">
-                    <div ng-view  style="margin-top:70px; padding:1em;font-size:16px"></div>
-                </div>
+            <div style="margin-bottom:1em;" md-colors="::{background: 'primary-700'}" flex-offset-gt-sm="10" flex-offset="5" flex-gt-sm="80" flex="90" class="shadow">
+                <div ng-view style="margin-top:70px; padding:1em;font-size:16px"></div>
+            </div>
         </div>
     </md-content>
-    <div  style="bottom:0px" md-colors="::{background: 'primary-200'}" layout="column" layout-gt-sm="row" layout-padding>
+    <div style="bottom:0px" md-colors="::{background: 'primary-200'}" layout="column" layout-gt-sm="row" layout-padding>
         <div flex flex-order-gt-sm="-1" flex-order="-1">
             <h3 class="center">Fale conosco</h3>
             <p class="center">
-               <br> Informações de contato
-               <br>
-               <br> ariana@teoremapropaganda.com.br 
-                
-               <br> Telefone: 47 3237-2486
-               <br> WhatsApp: 47 99146800
-    
+                <br> Informações de contato
+                <br>
+                <br> ariana@teoremapropaganda.com.br
+
+                <br> Telefone: 47 3237-2486
+                <br> WhatsApp: 47 99146800
+
             </p>
         </div>
         <div flex class="center" flex-order-gt-sm="2" flex-order="1">
             Desenvolvido por <br>
-            <a href="http://fortesweb.com.br"><img style="max-width: 200px" src="imgs/Logofw.png"></a>
+            <a href="http://fortesweb.com" target="_blank"><img style="max-width: 150px" src="imgs/Logofw.png"></a>
         </div>
         <div flex class="center" flex-order-gt-sm="1" flex-order="2">
-                <img src="imgs/LogoHorizontal.png" style="max-height:40px;max-width:100%;height:auto"/><br>
-            Copyright &#169; 2018, Todos os direitos reservados a Teorema .
+            <img src="imgs/LogoHorizontal.png" style="max-height:40px;max-width:100%;height:auto" /><br> Copyright &#169; 2018, Todos os direitos reservados a Teorema .
         </div>
     </div>
-    
+
 </body>
+
 </html>
